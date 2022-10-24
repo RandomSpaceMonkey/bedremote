@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>BedRemote</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="hero">
+          <h1>BedRemote</h1>
+        </div>
+      </header>
+      <div id="joystick-zone"></div>
+      <footer id="buttons">
+        <button class="button" id="left-click" onclick="handleClick()">
+          <span>left click</span>
+        </button>
+        <button class="button" id="right-click" onclick="handleClick()">
+          <span>right click</span>
+        </button>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.10.0/nipplejs.min.js"
+      integrity="sha512-Ek4L1sOQg+GDxNaS8d50CoR2dvogu3WUCPjFGFIVi4iaX4yEgU64UKIkEnkyiN9a+4kAPM9lPq30kSUammLJSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
