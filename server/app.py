@@ -5,7 +5,6 @@ import json
 import websockets
 import pyautogui
 import websockets.server
-from websockets.exceptions import ConnectionClosedError
 
 pyautogui.FAILSAFE = False
 Command = Dict[str, str]
