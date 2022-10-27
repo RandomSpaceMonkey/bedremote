@@ -8,7 +8,7 @@ import websockets.server
 
 pyautogui.FAILSAFE = False
 Command = Dict[str, str]
-EventHandler = Callable[[Command], None] | Callable[[], None]
+EventHandler = Callable[[Command], None]
 
 
 class Server:
@@ -47,8 +47,8 @@ class Server:
             print(f'{type(e).__name__}: {e}')
 
     async def run(self):
-        async with websockets.serve(self.main_handler, '', 8000):
-            print("server running on port 8000")
+        async with websockets.serve(self.main_handler, '', 50000):
+            print("server running on port 50000")
             await asyncio.Future()
 
 

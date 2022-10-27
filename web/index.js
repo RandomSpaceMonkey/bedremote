@@ -13,7 +13,7 @@ const options = {
 };
 
 let manager = nipplejs.create(options);
-let ws = new WebSocket("ws://10.0.0.170:8000");
+let ws = new WebSocket("ws://10.0.0.170:50000");
 let position;
 let interval;
 
