@@ -1,3 +1,4 @@
+// if browsing with safari then the bottom navigation bar of safari blocks the buttons so I elevate them a little so that I can see them when using the app
 if (
   navigator.userAgent.includes("iPhone") &&
   navigator.userAgent.includes("Safari")
